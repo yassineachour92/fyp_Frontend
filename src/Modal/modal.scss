@@ -1,0 +1,40 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 11;
+    background-color: white;
+    display: flex;
+    padding: 26px;
+    &__button {
+        margin-right: 100px;
+        font-size: 28px;
+    }
+
+    &__desc {
+        gap: 20px;
+        flex: 3;
+        /* padding-right: 199px; */
+        /* padding: 53px; */
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-top: 63px;
+        margin-left: 39px;
+        &__title{
+            font-weight: 700;
+        }
+    }
+
+    &__carousel {
+        flex: 3;
+        button{
+            color:red
+        }
+
+    }
+
+   
+}

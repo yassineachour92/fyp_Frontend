@@ -1,0 +1,47 @@
+.service{
+&__title{
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 73px;
+    margin-bottom: 20px;
+}
+&__block {
+    max-width: 1350px;
+    margin: auto;
+    padding: 0 60px;
+    display: flex;
+    grid-gap: 50px;
+    gap: 20px;
+    margin-bottom: 74px;
+    justify-content: space-around;
+  
+
+    &__title {
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    &__subtitle {
+        font-weight: bold;
+        text-align: left;
+    }
+
+    &__carousel {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 341px;
+    }
+}
+}
+.secondone {
+    padding-top: 20px;
+
+}
+
+@media (max-width:850px) {
+    .about__vision__description{
+        padding-right: 135px;
+    }
+
+}

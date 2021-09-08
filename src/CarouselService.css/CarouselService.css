@@ -1,0 +1,16 @@
+.legend {
+    background-color: transparent !important;
+    bottom: 15px !important;
+
+}
+
+.carousel {
+    margin-top: 20px;
+
+}
+
+@media (max-width:414px) {
+    .carousel {
+        margin-top: 90px;
+    }
+}

@@ -1,0 +1,24 @@
+.ant-image-preview-root {
+  /* display: none!important; */
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.holder {
+  cursor: pointer;
+}
+
+img {
+  height: auto;
+  height: 100%;
+
+}
+
+.img__carousel {
+  width: 150%;
+  height: 100%;
+
+}

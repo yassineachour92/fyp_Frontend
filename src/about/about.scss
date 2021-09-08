@@ -1,0 +1,126 @@
+.about {
+    margin-top: 33px;
+    background: #efefef;
+    padding-bottom: 100px;
+
+    &__img {
+        padding-top: 270px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__mission {
+        position: relative;
+        margin: 85px 0px 67px calc((100% - 980px) * 0.5);
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: start;
+        align-self: start;
+        text-align: left;
+
+        &__title {
+            color: #b3aaaa;
+            font-size: 38px;
+        }
+
+        &__description {
+            width: 58%;
+
+            height: auto;
+            color: #3e3e3e;
+            font-size: 16px;
+            line-height: 1.6em;
+            padding-top: 64px;
+        }
+    }
+
+    &__vision {
+        background: white;
+        margin-left: 30px;
+        margin-right: 22px;
+        position: relative;
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: start;
+        align-self: start;
+        text-align: left;
+
+        &__title {
+            color: #b3aaaa;
+            font-size: 38px;
+            text-align: right;
+            padding-right: 264px;
+            padding-top: 57px;
+
+        }
+
+        &__description {
+            margin-left: auto;
+            padding-right: 264px;
+            width: 77%;
+            height: auto;
+            color: #3e3e3e;
+            font-size: 16px;
+            line-height: 1.6em;
+            padding-top: 64px;
+            padding-bottom: 120px;
+        }
+
+        &__img {
+            margin-left: -30px;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .about {
+        &__mission {
+            // left: 215px;
+            margin-left: 87px;
+        }
+
+        &__vision__description {
+            padding-right: 167px;
+        }
+    }
+}
+
+@media (max-width:680px) {
+    .about {
+        &__mission {
+            &__description {
+                width: 80%;
+            }
+        }
+
+        &__vision {
+            &__title {
+                padding-right: 150px;
+            }
+
+            &__description {
+                padding-right: 91px;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width:414px) {
+    .about {
+        &__mission {
+            margin-left: 19px;
+        }
+
+        &__vision {
+            &__title {
+                padding-right: 66px;
+            }
+
+            &__description {
+                padding-right: 1px;
+            }
+        }
+    }
+}

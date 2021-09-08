@@ -1,0 +1,166 @@
+.navbar {
+    grid-template-columns: auto auto auto;
+    display: grid;
+    margin-top: 2.2rem;
+}
+
+.navbar__items {
+    grid-template-columns: auto auto auto;
+    display: grid;
+    padding: 38px;
+
+    a {
+        color: #ababab;
+    }
+}
+
+.navbar__button {
+    grid-template-columns: auto auto;
+    display: grid;
+    gap: 27px;
+    margin-right: 38px;
+    align-content: space-between;
+}
+
+.reserver {
+    margin-top: 28px;
+
+}
+
+.navbar__button__element {
+
+    height: 43px;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 1px 0 #0e182154;
+    background-color: #EFEFEF;
+    color: black;
+    font-family: futura-lt-w01-book, sans-serif;
+    font-size: 13px;
+
+}
+
+.buttomname {
+    padding-top: 11px;
+}
+
+.navbar__items__findimg {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+}
+
+.navbar__items__icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mobile_burger_menu {
+    display: none;
+}
+
+@media (max-width:850px) {
+
+    .carousel {
+        margin-top: 90px;
+    }
+
+    .web_burger_menu {
+        display: none;
+    }
+
+    .mobile_burger_menu {
+        display: flex;
+        // padding-bottom: 50px;
+
+    }
+
+    .icon {
+        margin-top: 30px;
+        margin-left: 20px;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 5%;
+        cursor: pointer;
+        z-index: 9;
+
+    }
+
+    .logo {
+        margin: 10%;
+        width: 70%;
+        height: 80%;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        z-index: 3;
+        right: 0;
+        background: #fafafa;
+        top: 5%;
+        opacity: 1;
+        position: fixed;
+        right: 0px;
+        z-index: 3;
+        width: 260px;
+        height: 100%;
+        transition: all 0.5s ease 0s;
+
+    }
+
+    .navbarnon {
+        display: none;
+    }
+
+    .navbar__items {
+
+        // display: flex;
+        flex-direction: column;
+        text-align: left;
+        display: grid;
+        /* display: flex; */
+        grid-template-columns: auto;
+        gap: 20px;
+
+        padding-top: 17px;
+        padding-left: 22px;
+
+        padding-right: 0;
+        padding-bottom: 0px;
+    }
+
+    .trustMe__carousel {
+        margin-left: 2px !important;
+        margin-right: 2px !important;
+    }
+
+  
+
+    .service__block {
+        flex-wrap: wrap;
+    }
+
+    .buttomname {
+        text-align: center;
+    }
+
+    .navbar__element {
+        text-align: center;
+    }
+
+    .menu_bar {
+        display: flex;
+        position: fixed;
+        z-index: 1;
+        /* align-content: space-between; */
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background: white;
+        width: 100%;
+    }
+
+}

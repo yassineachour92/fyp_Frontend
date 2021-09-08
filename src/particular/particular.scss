@@ -1,0 +1,37 @@
+.particular {
+    background-image: url("https://static.wixstatic.com/media/a8b38e_0839f86238b84d2eb24beec754c1f287~mv2.jpg/v1/fill/w_2824,h_2500,al_c,q_90,usm_0.66_1.00_0.01/a8b38e_0839f86238b84d2eb24beec754c1f287~mv2.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 24px;
+    // position: fixed;
+
+}
+.cardall{
+    display: flex;
+    gap: 58px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 500px;
+    //  position: absolute;
+    // z-index: 2;
+}
+
+.Professionnel{
+    background-image: url("https://static.wixstatic.com/media/a8b38e_79c785735c2a4316a33bad9a9c27833b~mv2.jpg/v1/fill/w_1349,h_349,al_c,q_85,usm_0.66_1.00_0.01/a8b38e_79c785735c2a4316a33bad9a9c27833b~mv2.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 24px;
+}
+
+@media (max-width:850px) {
+    .cardall {
+        
+        padding-top: 100px;
+    }
+
+}
