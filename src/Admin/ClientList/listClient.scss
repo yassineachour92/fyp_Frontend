@@ -1,0 +1,55 @@
+.listClient {
+
+    display: flex;
+
+    height: 92vh;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    margin-bottom: 0px;
+
+    &__clientName {
+        margin-top: 25px;
+        overflow-y: scroll;
+        flex: 2
+    }
+
+    &__clientInfo {
+        flex: 4
+    }
+
+    &__button {
+        margin-left: 20px
+    }
+
+    &__firstName {
+        font-family: Roboto;
+        font-size: 17px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.06;
+        letter-spacing: normal;
+        cursor: pointer;
+        padding-top: 10px;
+    }
+
+    &__allClientName {
+        margin-top: 50px;
+        margin-left: 25px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+.addClient {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: baseline
+}
+
+.currentClient {
+    color: #26beb5;
+
+}

@@ -1,6 +1,6 @@
 .contact {
     display: flex;
-
+    padding-bottom: 50px;
     &__firstblock {
         background-color: black;
         flex: 5;
@@ -81,6 +81,7 @@
 
 .contact {
     // margin-bottom: 240px;
+    padding-bottom: 10px;
 
     &__icon_phone {
         padding-left: 100px;

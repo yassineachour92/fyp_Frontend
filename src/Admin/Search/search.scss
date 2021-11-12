@@ -1,0 +1,18 @@
+.search {
+    margin-left:54px;
+    &__photo {
+        width: 2%;
+        position: fixed;
+        left: 22%;
+        top: 32px;
+        z-index: 9999999999;
+        height: 4%;
+    }
+
+    &__input {
+        padding: 0px 71px 10px 17px;
+        border-radius: 10px;
+        border: solid 1px #bdbdbe;
+        padding-top: 7px;
+    }
+}

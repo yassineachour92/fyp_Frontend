@@ -11,18 +11,19 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import About from './about/About';
 import Particular from './particular/Particular';
 import Professionnel from './professionnel/Professionnel';
+import ListClient from './Admin/ClientList/ListClient';
+// import { useParams } from 'react-router'
+
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-
   return (
     <BrowserRouter>
 
-      <div className="App" >
-        <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      <div className="App" data-testid="App">
         <Switch>
           <Route exact path="/">
             <div onClick={() => setIsMenuOpen(false)}>
-
+              <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
               <DemoCarousel />
               <Description />
               <Service />
@@ -36,25 +37,33 @@ function App() {
           </Route>
           <Route exact path="/about">
             <div onClick={() => setIsMenuOpen(false)}>
-
+              <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
 
               <About />
             </div>
           </Route>
-          <Route exact path="/particulier">
+          <Route exact path="/particular">
             <div onClick={() => setIsMenuOpen(false)}>
+              <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
 
               <Particular />
             </div>
           </Route>
-          <Route exact path="/Professionnel">
+          <Route exact path="/Professional">
             <div onClick={() => setIsMenuOpen(false)}>
-
+              <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
               <Professionnel />
             </div>
           </Route>
         </Switch>
       </div>
+      <div>
+      <Switch>
+          <Route exact path="/admin">
+            <ListClient />
+          </Route>
+      </Switch>
+</div>
     </BrowserRouter>
   );
 }
